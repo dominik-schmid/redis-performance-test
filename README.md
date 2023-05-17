@@ -13,6 +13,7 @@ This project is a rudimentary URL shortener to check how fast concurrent Redis c
 
 ```bash
 git clone https://github.com/dominik-schmid/redis-performance-test.git
+cd redis-performance-test
 ```
 
 **Start Redis with config**
@@ -33,7 +34,7 @@ go mod tidy
 go run ./cmd/redis-performance-test.go
 ```
 
-**Optional: Compile and Run Compiled Version**
+**Optional: Compile and run compiled version**
 
 You can also run the compiled version of this project but the performance shouldn't differ much because this shouldn't be the limiting factor in this case.
 
