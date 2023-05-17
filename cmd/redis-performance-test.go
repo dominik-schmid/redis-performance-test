@@ -76,7 +76,7 @@ func performSequentialTests(numberOfRequests int, MD5Hash string, client *redis.
 		client.Get(ctx, MD5Hash)
 	}
 	elapsedTime := time.Since(startTime)
-	fmt.Printf("Looking up %d MD5 hashes sequentially took %s\n", numberOfRequests, elapsedTime)
+	fmt.Printf("Looking up %d MD5 hashes sequentially took %.4ss\n", numberOfRequests, elapsedTime)
 }
 
 func performConcurrentTests(numberOfRequests int, MD5Hash string, client *redis.Client) {
@@ -102,5 +102,5 @@ func performConcurrentTests(numberOfRequests int, MD5Hash string, client *redis.
 	// Wait until all functions in this wait group have been finished
 	wg.Wait()
 	elapsedTime := time.Since(startTime)
-	fmt.Printf("Looking up %d MD5 hashes using go routines took %s\n", numberOfRequests, elapsedTime)
+	fmt.Printf("Looking up %d MD5 hashes using go routines took %.4ss\n", numberOfRequests, elapsedTime)
 }
