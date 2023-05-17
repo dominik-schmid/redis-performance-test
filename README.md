@@ -33,6 +33,15 @@ go mod tidy
 go run ./cmd/redis-performance-test.go
 ```
 
+**Optional: Compile and Run Compiled Version**
+
+You can also run the compiled version of this project but the performance shouldn't differ much because this shouldn't be the limiting factor in this case.
+
+```bash
+go build ./cmd/redis-performance-test.go
+./redis-performance-test
+```
+
 ## Example Results
 
 ```bash
