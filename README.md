@@ -36,7 +36,7 @@ go run ./cmd/redis-performance-test.go
 
 **Optional: Compile and run compiled version**
 
-You can also run the compiled version of this project but the performance shouldn't differ much because this shouldn't be the limiting factor in this case.
+You can also run the compiled version of this project, but the performance shouldn't differ much because this shouldn't be the limiting factor in this case.
 
 ```bash
 go build ./cmd/redis-performance-test.go
