@@ -18,7 +18,7 @@ git clone https://github.com/dominik-schmid/redis-performance-test.git
 **Start Redis with config**
 
 ```bash
-redis-server ./config/redis.conf`
+redis-server ./config/redis.conf
 ```
 
 **Install go modules**
